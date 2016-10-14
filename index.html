@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>省份页面模板</title>
+    <link rel="stylesheet" href="css/pag.css"/>
+</head>
+<body>
+<div class="main">
+    <div class="mainTop">
+        <div class=" floatLeft allButton">
+            <a id="recover" class=" floatLeft allButtonA allButtonA_Hover" href="###">回收金额</a>
+            <a id="arrears" class=" floatLeft marginLeft allButtonA" href="###">欠费金额</a>
+        </div>
+        <div class=" floatLeft timeRadio">
+            <select id="timeRadio" class="timeRadio timeSelect" name="timeRadio">
+                <option value="0">全年数据</option>
+                <option value="1">一月数据</option>
+                <option value="2">二月数据</option>
+                <option value="3">三月数据</option>
+            </select>
+        </div>
+    </div>
+    <div class="mainBottom">
+        <div id="guangdongMap" class=" floatLeft layoutMap"></div>
+        <div class="floatLeft marginLeft mainBottom_right">
+            <div id="allPie" class="allPie"></div>
+            <div id="columnarBar" class=" marginTop allPie"></div>
+        </div>
+    </div>
+    <div id="allLine" class="mainLine"></div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/guangdong.js"></script>
+<script type="text/javascript" src="js/pagData.js"></script>
+<script type="text/javascript" src="js/pag.js"></script>
+</body>
+</html>
